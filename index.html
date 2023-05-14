@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Easy flat</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="nav-cont">
+          <a href="/">
+            <svg class="nav-icon">
+              <use href="./Images/sprite/symbol-defs.svg#icon-logo"></use></svg
+          ></a>
+          <nav class="navigation">
+            <ul class="nav-list list">
+              <li class="nav-item">
+                <a href="#Topoffers" class="nav-link">Top offers</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Aboutus" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#References" class="nav-link">References</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Ourteam" class="nav-link">Our team</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts">
+            <button type="button" class="nav-button" data-action="open-modal">
+              Contact us
+            </button>
+            <div class="backdrop js-backdrop">
+              <div class="modal">
+                <button class="modal-icon" data-action="close-modal">
+                  <svg class="icon">
+                    <use
+                      href="./Images/sprite/symbol-defs.svg#icon-close-black"
+                    ></use>
+                  </svg>
+                </button>
+                <form class="form" autocomplete="off">
+                  <p class="form-title">
+                    Leave your contacts and we will call you back
+                  </p>
+                  <div class="form-cont">
+                    <label class="form-field"
+                      ><span class="form-label-name">Name</span>
+                      <svg class="form-icon">
+                        <use
+                          href="./Images/sprite/symbol-defs.svg#icon-name"
+                        ></use>
+                      </svg>
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-input"
+                        placeholder=" "
+                      />
+                    </label>
+
+                    <label class="form-field"
+                      ><span class="form-label">Phone</span>
+                      <svg class="form-icon">
+                        <use
+                          href="./Images/sprite/symbol-defs.svg#icon-phone"
+                        ></use>
+                      </svg>
+                      <input type="tel" name="phone" class="form-input" />
+                    </label>
+
+                    <label class="form-field"
+                      ><span class="form-label">Email</span>
+                      <svg class="form-icon">
+                        <use
+                          href="./Images/sprite/symbol-defs.svg#icon-mail"
+                        ></use>
+                      </svg>
+                      <input type="text" name="email" class="form-input" />
+                    </label>
+
+                    <label class="form-field comment"
+                      ><span class="form-label">Comment</span>
+                      <textarea
+                        name="comment"
+                        placeholder="Text input"
+                        class="form-comment"
+                      ></textarea>
+                    </label>
+
+                    <label class="checkbox-label">
+                      <input class="checkbox" type="checkbox" />
+                      <span class="checkbox-icon"></span>
+                      <span class="check-label"
+                        >I accept the terms and conditions of the
+                        <a href="" class="policy">Privacy Policy</a></span
+                      >
+                    </label>
+
+                    <button
+                      type="submit"
+                      disabled=""
+                      class="form-button js-button"
+                    >
+                      <span class="button-text">Send</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-cont">
+          <h1 class="hero-title">Modern living for everyone</h1>
+          <p class="hero-text">
+            We provide a complete service for the sale, purchase or rental of
+            real estate. We have been operating in Madrid and Barcelona more
+            than 15 years.
+          </p>
+          <div class="input-cont">
+            <input
+              type="text"
+              placeholder="Search of location"
+              class="hero-input"
+            />
+            <svg class="hero-icon">
+              <use href="./Images/sprite/symbol-defs.svg#icon-map"></use>
+            </svg>
+          </div>
+        </div>
+        <img
+          src="./Images/headerPic.jpg"
+          alt="flat"
+          width="595"
+          class="hero-pic"
+        />
+      </div>
+    </section>
+    <section class="offers" id="Topoffers">
+      <div class="container">
+        <h2 class="offers-title">Top offers</h2>
+        <div class="offers-cont">
+          <p class="offers-text">
+            Fulfill your career dreams, enjoy all the achievements of the city
+            center and luxury housing to the fullest.
+          </p>
+          <button type="button" class="button">Show all offers</button>
+        </div>
+        <ul class="offers list">
+          <li class="offers-item">
+            <img src="./Images/Group1.jpg" alt="flat 2" width="350" />
+            <div class="offers-sub">
+              <p class="text">
+                Large 4-room apartment with a beautiful terrace
+              </p>
+              <p class="price">320 000€</p>
+              <p class="place">Barcelona IX.</p>
+            </div>
+          </li>
+
+          <li class="offers-item">
+            <img src="./Images/Group2.jpg" alt="flat 2" width="350" />
+            <div class="offers-sub">
+              <p class="text">5i large design apartment with terrace</p>
+              <p class="price">280 000€</p>
+              <p class="place">Madrid VI.</p>
+            </div>
+          </li>
+
+          <li class="offers-item">
+            <img src="./Images/Group3.jpg" alt="flat 3" width="350" />
+            <div class="offers-sub">
+              <p class="text">3-room apartment with a beautiful terrace</p>
+              <p class="price">350 000€</p>
+              <p class="place">Madrid II.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about-us" id="Aboutus">
+      <div class="container">
+        <div class="about-us-cont">
+        <img
+        src="./Images/AboutUs.jpg"
+        alt="Работник разбирается со схемами"
+        class="about-us-image"
+        width="688"
+        height="464"
+      />
+      <div class="artc-cont">
+        <h2 class="about-us-title">About us</h2>
+       
+        <p class="about-us-article">
+            We are a company that connects the world of real estate and finance.
+            We provide a complete service for the sale, purchase or rental of real
+            estate. Our advantage is more than 15 years of experience and soil in
+            attractive locations in Slovakia with branches in Bratislava and
+            Košice.
+          </p>
+      </br >
+          <p class="about-us-article">
+            We have a connection to all banks on the Slovak market, so we can
+            solve everything under one roof. By constantly innovating our business
+            activities, we move forward and we are able to offer truly
+            above-standard services that set us apart from the competition.
+          </p>
+       </div>
+      </div>
+      </div>
+    </section>
+    <footer class="footer">
+        <a class="footer-btn">
+            <svg class="footer-logo">
+                <use href="./Images/sprite/symbol-defs.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <a class="footer-title">Easy flat</a>
+    </footer>
+    <script src="./modal.js" type="module"></script>
+    <script src="./form.js" type="module"></script>
+  </body>
+</html>
